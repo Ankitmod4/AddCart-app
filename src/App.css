@@ -37,17 +37,39 @@
   }
 }
 
-button{
-  background-color: #28a745; /* Bootstrap success green */
-  color: white;
+.button {
+  background-color: #21cd4c;
+  color: #ffffff; /* text color */
   border: none;
   padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
   font-size: 16px;
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
-button:hover {
-  background-color: #218838; /* Darker green on hover */
+.button:hover {
+  background-color: #a0a0a0; /* darker shade on hover */
 }
+.buttonone{
+  background-color: #da1a3a;
+  color: #ffffff; 
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.buttonone:hover {
+  background-color: #d7e116; 
+}
+
+

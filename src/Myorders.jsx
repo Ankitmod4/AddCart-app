@@ -1,21 +1,19 @@
 // Myorders.js
 import React from 'react';
+import './Myorder.css'
+const Myorders = ({ cart,remove}) => {
 
-const Myorders = ({ cart }) => {
-  // Ensure cart is defined and not empty before mapping
-  if (!cart ) {
-    return <div>Your cart is empty.</div>;
-  } 
-
+  
   return (
     <div>
       <h2>My Orders</h2>
-      <ul>
+      <ul className='product-container'>
         {cart.map((item, index) => (
           <li key={index}>
             <div>{item.title}</div>
+            <img src={item.image} width={100} alt="" />
             <div>${item.price}</div>
-           
+            <button className='buttonone' onClick={ ()=>remove(item)}>Remove Item</button>
           </li>
         ))}
       </ul>
