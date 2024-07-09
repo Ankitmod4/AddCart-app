@@ -1,10 +1,9 @@
-// Myorders.js
 import React from 'react';
 import './Myorder.css'
-const Myorders = ({ cart,remove}) => {
 
+const Myorders = ({ cart, remove }) => {
   
-  return (
+  return ( 
     <div>
       <h2>My Orders</h2>
       <ul className='product-container'>
@@ -12,8 +11,9 @@ const Myorders = ({ cart,remove}) => {
           <li key={index}>
             <div>{item.title}</div>
             <img src={item.image} width={100} alt="" />
-            <div>${item.price}</div>
-            <button className='buttonone' onClick={ ()=>remove(item)}>Remove Item</button>
+            <div>Price:$ {item.price * item.quantity}</div>
+            <div>Quantity: {item.quantity}</div>
+            <button className='buttonone' onClick={() => remove(item)}>Remove Item</button>
           </li>
         ))}
       </ul>
